@@ -29,6 +29,7 @@ import { getFirestore, collection, getDocs } from "https://www.gstatic.com/fireb
 const db = getFirestore(app);
 
 document.getElementById('createData').addEventListener('click', async () => {
+  console.log("I am clicked");
     try {
         // Reference to the collection
         const docRef = await addDoc(collection(db, "users"), {
